@@ -1,0 +1,89 @@
+body {
+  font-family: "Poppins", sans-serif;
+  color: rgb(106, 111, 110);
+
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10rem;
+  gap: 2rem;
+}
+
+.row { 
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.photo, .aboutme { 
+  height: 24rem;
+}
+
+.photo img {
+  width: 20rem;
+  margin-bottom: 1rem;
+}
+
+.photo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 3rem;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+  border-radius: 1rem;
+}
+
+a { 
+  text-decoration: none;
+  color: rgb(106, 111, 110);
+  margin-right: 1rem;
+}
+
+a:hover { 
+  color: rgb(102, 126, 122);
+}
+
+.aboutme { 
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+}
+
+.me-header { 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bolder;
+  font-size: 3rem;
+}
+
+.me-header img { 
+  width: 3rem;
+}
+
+.me { 
+  padding: 2rem 3rem;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+  border-radius: 1rem;
+}
+
+body > div > div:nth-child(1) > div.aboutme > div.me > h1, body > div > div:nth-child(1) > div.aboutme > div.me > h4 {
+  margin: 0;
+}
+
+
+.education, .experience { 
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-self: start;
+  padding: 1rem 3rem;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+  border-radius: 1rem;
+  height: 26rem;
+}

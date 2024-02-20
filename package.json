@@ -1,0 +1,16 @@
+{
+  "name": "protofoliu",
+  "version": "1.0.0",
+  "description": "Repozitoriu destinat prezentării portofoliului meu profesional și a CV-ului web, construit folosind HTML, SCSS, și JavaScript.  Portofoliul include proiecte variate, de la site-uri web la aplicații web interactive, fiecare reflectând experiența și competențele mele în domeniu.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "sass --watch scss:css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.71.0"
+  }
+}
