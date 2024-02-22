@@ -1,0 +1,45 @@
+/* Add this to your styles.css file */
+
+.footer {
+  width: 100%;
+  background-color: #f8f9fa; 
+  padding: 1rem 0;
+  box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+  text-align: center;
+  position: relative;
+  bottom: 0;
+}
+
+.footer-content p {
+  margin: 0.5rem 0;
+  color: #6c757d; 
+  font-size: 1rem; 
+}
+
+.footer-links a {
+  margin: 0 5px;
+  color: #4e8c83; 
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    padding: 1rem;
+  }
+  .footer-links {
+    padding-top: 0.5rem;
+  }
+  .footer-links a {
+    display: block; 
+    margin: 0.5rem auto; 
+  }
+  .footer-content p,
+  .footer-links a {
+    font-size: 0.8rem; 
+  }
+}

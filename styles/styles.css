@@ -1,0 +1,39 @@
+@import 'about.css';
+@import 'navbar.css';
+@import 'index.css';
+@import 'footer.css';
+@import 'works.css';
+
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: rgb(59, 78, 74);
+  background-color: #f3f3f3;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10rem;
+  gap: 2rem;
+}
+
+.row { 
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 1rem;
+}
+
+a { 
+  text-decoration: none;
+  color: rgb(106, 111, 110);
+  margin-right: 1rem;
+}
+
+a:hover { 
+  color: #4e8c83; 
+}
+

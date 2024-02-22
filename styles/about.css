@@ -1,0 +1,318 @@
+.photo, .aboutme { 
+  height: 24rem;
+}
+
+.photo img {
+  width: 20rem;
+  margin-bottom: 1rem;
+}
+
+.photo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 3rem;
+  border-radius: 1rem;
+  background-color: white;
+}
+
+.aboutme { 
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+}
+
+.me-header { 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bolder;
+  font-size: 3rem;
+}
+
+.me-header img { 
+  width: 3rem;
+}
+
+.me { 
+  padding: 2rem 3rem;
+  background-color: white;
+  border-radius: 1rem;
+}
+
+body > div > div:nth-child(1) > div.aboutme > div.me > h1, body > div > div:nth-child(1) > div.aboutme > div.me > h4 {
+  margin: 0;
+}
+
+
+.education, .experience { 
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-self: start;
+  padding: 1rem 3rem;
+  background-color: white;
+  border-radius: 1rem;
+  height: 26rem;
+}
+
+.skills-list { 
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+
+.skills, .softskills, .links { 
+  padding: 2rem 3rem;
+  background-color: white;
+  border-radius: 1rem;
+  height: 16rem;
+}
+
+.softskills p {
+  margin: 0;
+}
+
+.softskills ul {
+  padding-left: 1rem;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+}
+
+.bi-filetype-php { 
+  color: rgb(86, 86, 245);
+}
+
+.bi-filetype-rb { 
+  color: rgb(169, 31, 31);
+}
+
+.bi-filetype-cs {
+  color: rgb(139, 34, 226);
+}
+
+
+.volunteering, .projects { 
+  padding: 2rem 3rem;
+  background-color: white;
+  border-radius: 1rem;
+  height: 26rem;
+}
+
+.languages { 
+  width: 52%
+}
+
+.languages, .passions {
+  padding: 2rem 3rem;
+  background-color: white;
+  border-radius: 1rem;
+  height: 13rem;
+  align-items: center;
+}
+
+.languages h3 {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 4px;
+}
+
+.languages h5 { 
+  margin: 0;
+}
+
+.language-bar-container {
+  background-color: #e0e0e0;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 1rem;
+}
+
+.language-bar {
+  height: 20px;
+  border-radius: 10px;
+  background-color: #7da2a9;
+}
+
+.romanian {
+  margin-bottom: 0;
+}
+
+.english {
+  width: 75%; 
+}
+
+.icons { 
+  color: #e1a3a0;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-visible {
+  opacity: 1; 
+  transform: translateY(0);
+  animation: fadeIn 1s ease-in-out; 
+}
+
+.container > .row > div {
+  opacity: 0; 
+  animation: fadeIn 1s ease-in-out forwards; 
+}
+
+/* Responsive Design */
+@media (max-width: 1431px) {
+  .container {
+    padding: 2rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .row {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .photo { 
+    width: 90%;
+    background-color: transparent;
+    justify-self: center;
+    margin-bottom: 2rem;
+  }
+
+  .experience, .education {
+    width: 90%;
+    height: auto;
+    margin-bottom: 2rem;
+    justify-content: center;
+  }
+
+  .skills, .softskills, .links, .projects, .volunteering, .languages, .passions {
+    width: 89%;
+    height: auto;
+    margin-bottom: 2rem;
+  
+  }
+
+  .me-header img { 
+    width: 3rem;
+  }
+
+ .languages h5, .language-bar-container {
+    width: auto;
+  }
+
+  .language-bar.romanian, .language-bar.english {
+    width: 90%; 
+  }
+}
+
+@media (max-width: 880px){
+  .container {
+    padding: 1rem !important;
+  }
+  
+  .me-header {
+    font-size: 2rem;
+  }
+
+  .me-header img {
+    width: 2rem;
+  }
+
+  .row {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .photo { 
+    width: 80%;
+    background-color: transparent;
+    justify-self: center;
+    margin-bottom: 2rem;
+  }
+
+  .skills-list { 
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+  }
+
+  .experience, .education {
+    width: 100%;
+    height: auto;
+    margin-bottom: 2rem;
+    justify-content: center;
+  }
+
+  .skills, .softskills, .links, .projects, .volunteering, .languages, .passions {
+    width: 100%;
+    height: auto;
+    margin-bottom: 2rem;
+
+  }
+
+  .photo img, .me, .experience, .education, .skills, .softskills, .links, .projects, .volunteering, .languages, .passions {
+    padding: 1rem;
+  }
+
+  .skills-list {
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 660px){
+  .container {
+    padding: 0.1 !important;
+  }
+  .photo img { 
+    width: 13rem;
+  }
+
+  .mails a  { 
+    font-size: 3rem;
+  }
+
+
+  .abotume, .experience, .education {
+    width: 90%;
+    height: auto;
+    margin-bottom: 2rem;
+    justify-content: center;
+  }
+
+  .skills, .softskills, .links, .projects, .volunteering, .languages, .passions {
+    width: 90%;
+    height: auto;
+    margin-bottom: 2rem;
+  }
+
+  .icons {
+    display: flex;
+    justify-content: center;
+  }
+
+  .icons svg {
+    width: 60px;
+    height: 60px;
+  }
+}
