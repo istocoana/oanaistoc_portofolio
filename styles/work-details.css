@@ -1,0 +1,174 @@
+.details-container { 
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.branding { 
+  color: rgb(199, 199, 199);
+}
+
+.title { 
+  display: flex;
+  text-transform: uppercase;
+}
+
+.title img { 
+  width: 3rem;
+}
+
+.cover-photo { 
+  height: 400px;
+  width: 100%; 
+  padding: 0;
+  margin: 0;
+  background-image: url('../images/laravel1.jpg');
+  background-size: cover; 
+  background-position: center; 
+}
+
+.cover-photo-eureka { 
+  height: 400px;
+  width: 100%; 
+  padding: 0;
+  margin: 0;
+  background-image: url('../images/eureka-cover.png');
+  background-size: cover; 
+  background-position: center; 
+}
+
+
+.cover-photo-pacman { 
+  height: 400px;
+  width: 100%; 
+  padding: 0;
+  margin: 0;
+  background-image: url('../images/pacman-drept.png');
+  background-size: cover; 
+  background-position: center; 
+}
+
+.cover-photo-figma { 
+  height: 400px;
+  width: 100%; 
+  padding: 0;
+  margin: 0;
+  background-image: url('../images/futureship.png');
+  background-size: cover; 
+  background-position: center; 
+}
+
+
+.details-row { 
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  padding: 0.5rem 10rem;
+}
+
+.title-row { 
+  padding: 0.5rem 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-bottom: 0 !important;
+}
+
+.description { 
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: white;
+  border-radius: 1rem;
+}
+
+.descr-box { 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgb(246, 246, 246);
+  border-radius: 1rem;
+  width: 40%;
+  padding: 1rem;
+  margin: 2rem;
+  height: 28rem;
+}
+
+.box-photo img:hover, .descr-box:hover, .box-photoimg:hover, .dreptangular-photo:hover { 
+  border-radius: 1rem;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.pacman {
+  height: 20rem !important;
+}
+
+.descr-box h4 { 
+  margin: 0.5rem 0;
+}
+
+.descr-box ul, p { 
+  margin-top: 0;
+}
+
+.dreptangular-photo img { 
+  width: 100%;
+  border-radius: 1rem;
+}
+
+
+.box-photo img { 
+  width: 25rem;
+  border-radius: 1rem;
+}
+
+.box-photo { 
+  margin-bottom: 2rem;
+}
+
+
+@media (max-width: 1400px) {
+  .details-row, .description {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .descr-box {
+    width: 80%; 
+    margin: 1rem;
+    height: auto; 
+  }
+
+  .title-row, .details-row {
+    padding: 0.5rem 1rem; 
+  }
+
+  .box-photo img {
+    width: auto; 
+    height: auto;
+    max-width: 90%; 
+  }
+
+  .cover-photo {
+    height: 200px; 
+    width: 200px;
+  }
+
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .descr-box, .box-photo img {
+    width: 45%; 
+  }
+
+  .details-row {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .cover-photo {
+    height: 300px; 
+  }
+}

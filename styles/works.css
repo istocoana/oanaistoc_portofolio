@@ -83,5 +83,59 @@
 
 .button img:hover { 
   opacity: 100%;
-  animation: fadeIn 0.5s ease-in; 
+}
+
+
+/* Base styles above for larger screens */
+
+/* Responsive adjustments */
+@media (max-width: 1000px) {
+  .works-container {
+    flex-direction: column;
+    padding: 5rem 2rem;
+  }
+
+  .col-md-4, .col-md-8 {
+    width: 100%;
+  }
+
+  .col-md-8 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .all-pj-text h1, .all-pj-text img  {
+    display: none;
+  }
+
+  .box img {
+    width: 100%; 
+    max-width: 18rem; 
+    height: auto; 
+  }
+
+  .bottom-box {
+    width: 90%; 
+  }
+}
+
+@media (max-width: 480px) {
+  .all-pj-text h1 {
+    font-size: 2rem; /
+  }
+
+  .works-container {
+    padding: 5rem 1rem;
+  }
+
+  .button img {
+    width: 2rem;
+  }
+
+  .bottom-text h3, .bottom-text p {
+    font-size: 0.8rem; /* Adjust text size for smaller screens */
+  }
 }
